@@ -1,7 +1,14 @@
-.clients{
+.clients {
+  border-color: var(--white-bkgr);
+  padding-top: 94px;
+  padding-bottom: 94px;
   background-color: var(--light-white);
+  /*  Задаём значения перехода  */
+  transition: border-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .clients__title {
+  font-family: var(--clients-title-font);
   font-weight: 700;
   font-size: 36px;
   line-height: calc(42/36);
@@ -12,14 +19,6 @@
   margin-bottom: 50px;
 }
 
-.clients {
-  border-color: var(--white-bkgr);
-  padding-top: 94px;
-  padding-bottom: 94px;
-  /*  Задаём значения перехода  */
-  transition: border-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
 .clients__list {
   display: flex;
   justify-content: center;
@@ -27,7 +26,6 @@
 }
 
 .clients__item {
-
   flex-basis: calc((100% - 150px)/6);
 }
 
@@ -41,7 +39,15 @@
   justify-content: center;
   /*  Задаём значения перехода  */
   transition: border var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+.clients__link {
+  &:hover {
+    border-color: var(--blue);
+  }
 
+  &:focus {
+    border-color: var(--blue);
+  }
 }
 
 .clients__icons {
@@ -51,13 +57,12 @@
   /*  Задаём значения перехода  */
   transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
 }
+.clients__link {
+  &:hover .clients__icons {
+    fill: var(--blue);
+  }
 
-.clients__link:hover,
-.clients__link:focus {
-  border-color: var(--blue);
-}
-
-.clients__link:hover .clients__icons,
-.clients__link:focus .clients__icons {
-  fill: var(--blue);
+  &:focus .clients__icons {
+    fill: var(--blue);        
+  }
 }

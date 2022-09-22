@@ -586,7 +586,9 @@ button.close:focus {
       justify-content: center;
       gap: 30px;
 }
-
+.team-list img{
+      display: block;
+}
 .team-card-text {
       padding: 30px 10px;
 
