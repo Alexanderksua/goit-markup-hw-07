@@ -53,9 +53,6 @@ body {
       font-family: 'Roboto', 'Sans Serif';
 }
 
-.qualites,
-.features,
-.clients,
 .main-portfolio {
       background-color: var(--light-white);
 }
@@ -560,120 +557,11 @@ button.close:focus {
       z-index: 1;
 }
 
-/* ========================================================================== */
-/* QUALITES */
-.qualites {
-      padding-top: 94px;
-      padding-bottom: 94px;
-}
 
-.qualites-icon {
-      display: block;
-}
 
-.qualites-item-icon {
-      display: flex;
 
-      height: 120px;
-      justify-content: center;
-      align-items: center;
-      margin-bottom: 30px;
-      background: var(--ligth-gray-bkgr-team);
 
-      border-radius: 4px;
-}
-
-.qualites-list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-}
-
-/*.team-list>.item:not(:last-child)  */
-.qualites-item {
-
-      flex-basis: calc((100% - 90px)/4);
-}
-
-.qualites-list h3 {
-      font-weight: 700;
-      font-size: 14px;
-      line-height: calc(16/14);
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-
-      color: var(--dark-gray);
-      margin-bottom: 10px;
-}
-
-.qualites-list p {
-      font-weight: 400;
-      font-size: 14px;
-      line-height: calc(24/14);
-      letter-spacing: 0.03em;
-
-      color: var(--light-gray);
-}
-
-/* FEATURES */
-.features {
-      position: relative;
-      z-index: -1;
-      padding-bottom: 94px;
-}
-
-.features-item {
-      position: relative;
-      flex-basis: calc((100% - 60px)/3);
-}
-
-.over-text {
-      position: absolute;
-      display: flex;
-      left: 0;
-      width: 100%;
-      height: 70px;
-      bottom: 0;
-      justify-content: center;
-      align-items: center;
-      /* padding-top: 27px;
-      padding-bottom: 27px;
-      padding-left: 0.5em;
-      padding-right: 0.5em; */
-      text-align: center;
-
-      background: rgba(47 48 58 / .8);
-      mix-blend-mode: normal;
-}
-
-.over-text p {
-      display: block;
-      font-weight: 700;
-      font-size: 14px;
-      line-height: calc(16 / 14);
-      text-align: center;
-      letter-spacing: 0.03em;
-      text-transform: uppercase;
-      color: var(--light-white);
-}
-
-.features-list img,
-.team-list img {
-      display: block;
-}
-
-.features-list {
-      display: flex;
-      position: relative;
-      justify-content: center;
-      gap: 30px;
-      background: var(--white-bkgr);
-      z-index: -1;
-}
-
-.features-title,
-.team-title,
-.clients-title {
+.team-title {
       font-weight: 700;
       font-size: 36px;
       line-height: calc(42/36);
@@ -738,56 +626,8 @@ button.close:focus {
       margin-bottom: 16px;
 }
 
-/* clients */
-.clients {
-      border-color: var(--white-bkgr);
-      padding-top: 94px;
-      padding-bottom: 94px;
-      /*  Задаём значения перехода  */
-      transition: border-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
-}
 
-.clients-list {
-      display: flex;
-      justify-content: center;
-      gap: 30px;
-}
 
-.clients-item {
-
-      flex-basis: calc((100% - 150px)/6);
-}
-
-.clients-link {
-      display: flex;
-      cursor: pointer;
-      height: 92px;
-      border: 1px solid var(--clients-icons-light-gray);
-      border-radius: 4px;
-      align-items: center;
-      justify-content: center;
-      /*  Задаём значения перехода  */
-      transition: border var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
-
-}
-
-.clients-icons {
-      display: flex;
-      justify-content: center;
-      fill: var(--clients-icons-light-gray);
-      /*  Задаём значения перехода  */
-      transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
-}
-
-.clients-link:hover,
-.clients-link:focus {
-      border-color: var(--blue);
-}
-
-.clients-link:hover .clients-icons,
-.clients-link:focus .clients-icons {
-      fill: var(--blue);
-}
 
 /* PORTFOLIO main */
 .main-portfolio {

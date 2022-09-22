@@ -1,7 +1,6 @@
-:root{
---main-font: 'Roboto',  sans-serif;
---secondary-font: 'Raleway',  sans-serif;
-}
-$main-font: 'Roboto', sans-serif;
-$secondary-font: 'Raleway', sans-serif;
-
+@import './utils/vars';
+@import './base/base';
+@import './base/reset';
+@import './components/qualites';
+@import './components/features';
+@import './components/clients';

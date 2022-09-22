@@ -1,4 +1,125 @@
-:root {
-  --main-font: "Roboto", sans-serif;
-  --secondary-font: "Raleway", sans-serif;
+@charset "UTF-8";
+/* Block 1 */ /* Block 2 */
+html {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+          box-sizing: inherit;
+}
+
+/* Block 3 */
+h1,
+h2,
+h3,
+p,
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+.list {
+  list-style-type: none;
+}
+
+.qualites {
+  background-color: var(--light-white);
+}
+
+.features {
+  background-color: var(--light-white);
+}
+
+.features__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-gray);
+  margin-bottom: 50px;
+}
+
+.clients {
+  background-color: var(--light-white);
+}
+
+.clients__title {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.1666666667;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: var(--dark-gray);
+  margin-bottom: 50px;
+}
+
+.clients {
+  border-color: var(--white-bkgr);
+  padding-top: 94px;
+  padding-bottom: 94px;
+  /*  Задаём значения перехода  */
+  -webkit-transition: border-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border-color var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.clients__item {
+  -ms-flex-preferred-size: calc((100% - 150px) / 6);
+      flex-basis: calc((100% - 150px) / 6);
+}
+
+.clients__link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  cursor: pointer;
+  height: 92px;
+  border: 1px solid var(--clients-icons-light-gray);
+  border-radius: 4px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  /*  Задаём значения перехода  */
+  -webkit-transition: border var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: border var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  fill: var(--clients-icons-light-gray);
+  /*  Задаём значения перехода  */
+  -webkit-transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+  transition: fill var(--transition-timing) cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients__link:hover,
+.clients__link:focus {
+  border-color: var(--blue);
+}
+
+.clients__link:hover .clients__icons,
+.clients__link:focus .clients__icons {
+  fill: var(--blue);
 }/*# sourceMappingURL=main.css.map */
