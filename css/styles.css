@@ -232,12 +232,13 @@ a:focus .link-div {
       background-position: center;
       width: 1600px;
       height: 600px;
+      padding: 200px 0;
       margin: 0 auto;
       background-size: cover;
 }
 
 .hero-group {
-      padding: 200px 0;
+      /* padding: 200px 0; */
       text-align: center;
 }
 
@@ -439,23 +440,20 @@ button.close:focus {
       display: flex;
       justify-content: center;
       align-items: center;
+      gap: 12px;
       margin-top: 20px;
 }
 
-.checkbox-group>input,
-.checkbox-group>label {
-      display: block;
-      padding: 0;
-      margin: 0;
-}
-
-.checkbox-group>label {
+.checkbox-policy-text {
       font-weight: 400;
       font-size: 14px;
       line-height: calc(24 / 14);
       letter-spacing: 0.03em;
       color: var(--light-gray);
-      padding-left: 7px;
+}
+
+.checkbox-policy-text {
+      user-select: none;
 }
 
 .checkbox-policy-text a {
@@ -464,7 +462,7 @@ button.close:focus {
 }
 
 /* ЗАМЕНА ЧекБокса */
-.checkbox-group>input {
+.checkbox {
       position: absolute;
       top: 50%;
       left: 12px;
@@ -474,30 +472,41 @@ button.close:focus {
       height: 15px;
 }
 
-.checkbox-group input+svg {
-      border: 2px solid var(--black);
-      border-radius: 2px;
-      background-color: var(--light-white);
-      fill: var(--light-white);
-      /*  Задаём значения перехода  */
-      transition-property: fill, background-color, border, box-shadow;
-      transition-duration: var(--transition-timing);
-      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-      ;
-}
+/* .checkbox-group input+svg {
 
 /* Переход ЧекБокса */
-.checkbox-group input:checked+svg {
-      border: none;
+
+.icon-checked {
+      opacity: 0;
+      /* Задаём значения перехода  */
+}
+
+.checkbox:checked+.checkbox-icons .icon-checked {
+      opacity: 1;
       fill: var(--blue);
-      background-color: var(--blue);
+      transition-property: fill, border, box-shadow;
+      transition-duration: var(--transition-timing);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.icon-empty {
+      opacity: 1;
+      transition-property: fill, border, box-shadow;
+      transition-duration: var(--transition-timing);
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.checkbox:checked+.checkbox-icons .icon-empty {
+      opacity: 0;
 }
 
 /* Focus on Checkbox */
-.checkbox-group .checkbox:focus+svg {
-      border-color: var(--blue);
+.checkbox:focus+.checkbox-icons {
+      border-radius: 2px;
+      fill: var(--blue);
       box-shadow: 0px 4px 4px rgba(0 0 0 / .15);
 }
+
 
 /* ========================================================= */
 /* register-form-submit-btn */
@@ -586,12 +595,9 @@ button.close:focus {
       justify-content: center;
       gap: 30px;
 }
-.team-list img{
-      display: block;
-}
-.team-card-text {
-      padding: 30px 10px;
 
+.team-list img {
+      display: block;
 }
 
 .team-item {
@@ -796,6 +802,7 @@ button.close:focus {
 
 .footer-group {
       display: flex;
+      align-items: baseline;
 }
 
 .footer-logo {
@@ -898,8 +905,7 @@ button.close:focus {
 
 .footer-social {
       display: block;
-      /* margin-right: 93px; */
-      padding-top: 12px;
+      /* padding-top: 12px; */
 }
 
 .footer-social-title {
@@ -951,7 +957,7 @@ button.close:focus {
 .footer-form {
       display: block;
       margin-left: auto;
-      padding-top: 12px;
+      /* padding-top: 12px; */
 }
 
 .footer-submit-form {

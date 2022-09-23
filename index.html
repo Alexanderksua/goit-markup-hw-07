@@ -133,19 +133,20 @@
               <textarea name="comment" id="comment" cols="60" rows="7" placeholder="Введіть коментар"></textarea>
             </div>
 
-            <div class="checkbox-group">
-              <input type="checkbox" class="checkbox visually-hidden" name="policy" id="policy" value="agree" checked
-                required>
-              <svg width="16" height="15">
-                <use href="./images/icons.svg#icon-check-box-checked"></use>
+            <!--CHECK BOX-->
+            <label for=policy class="checkbox-group">
+              <input type="checkbox" class="checkbox visually-hidden" name="policy" id="policy" value="agree" required>
+              <svg class="checkbox-icons" width="16" height="15">
+                <use class="icon-checked" href="./images/icons.svg#icon-check-box-checked"></use>
+                <use class="icon-empty" href="./images/icons.svg#icon-check-box-empty"></use>
               </svg>
-              <label for="policy" class="checkbox-policy-text">
+              <span class="checkbox-policy-text">
                 Погоджуюся з розсилкою та приймаю
                 <a href="https://wiki.legalaid.gov.ua/" target="_blank" rel="nofollow noopener noreferrer">
                   Умови договору
                 </a>
-              </label>
-            </div>
+              </span>
+            </label>
 
             <div class="register-form-submit-btn">
               <button type="submit">Відправити</button>
