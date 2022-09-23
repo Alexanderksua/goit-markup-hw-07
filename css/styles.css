@@ -570,6 +570,21 @@ button.close:focus {
 
 
 
+
+
+
+
+/* TEAM */
+.team {
+      background-color: var(--ligth-gray-bkgr-team);
+      padding-top: 94px;
+      padding-bottom: 94px;
+
+}
+.team-card-text{
+      padding-top: 30px;
+      padding-bottom: 30px;
+}
 .team-title {
       font-weight: 700;
       font-size: 36px;
@@ -579,15 +594,6 @@ button.close:focus {
 
       color: var(--dark-gray);
       margin-bottom: 50px;
-}
-
-
-
-/* TEAM */
-.team {
-      background-color: var(--ligth-gray-bkgr-team);
-      padding-top: 94px;
-      padding-bottom: 94px;
 }
 
 .team-list {
